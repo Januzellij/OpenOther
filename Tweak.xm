@@ -1,16 +1,16 @@
 #import <UIKit/UIKit.h>
 
 
-@interface SBApplicationController {}
+@interface SBApplicationController
 +(id)sharedInstance;
 -(id)applicationWithDisplayIdentifier:(id)bundleIdentifier;
 @end
 
-@interface SBApplication {}
+@interface SBApplication
 -(id)displayIdentifier;
 @end
 
-@interface SBUIController : NSObject {}
+@interface SBUIController : NSObject
 -(void)activateApplicationAnimated:(id)application;
 @end
 
@@ -19,11 +19,10 @@ static NSString *appToOpen;
 BOOL enabled;
 
 static void LoadPrefs() {
-	NSDictionary *prefs = [[NSDictionary alloc] initWithContentsOfFile:@"var/mobile/Library/Preferences/com.jakej.openotherprefs.plist"];
-	appToRedirect = [[prefs objectForKey:@"appToRedirect"] retain];
-	appToOpen = [[prefs objectForKey:@"appToOpen"] retain];
+	NSDictionary *prefs = [[NSDictionary alloc] initWithContentsOfFile:[NSHomeDirectory() stringByAppendingPathComponent:@"/Library/Preferences/com.jakej.openotherprefs.plist"]];
+	appToRedirect = [prefs objectForKey:@"appToRedirect"];
+	appToOpen = [prefs objectForKey:@"appToOpen"];
 	enabled = [[prefs objectForKey:@"enabled"] boolValue];
-	[prefs release];
 }
 
 %hook SBUIController
