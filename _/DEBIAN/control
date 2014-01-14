@@ -1,0 +1,10 @@
+Package: com.jakej.openother
+Name: OpenOther
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: Jake Januzelli
+Author: Jake Januzelli
+Section: Tweaks
+Version: 0.0.1-7
+Installed-Size: 160

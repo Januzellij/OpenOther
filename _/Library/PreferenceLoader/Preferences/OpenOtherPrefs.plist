@@ -1,0 +1,10 @@
+{
+    entry = {
+	bundle = OpenOtherPrefs;
+	cell = PSLinkCell;
+	detail = OpenOtherPrefsListController;
+	icon = OpenOtherPrefs.png;
+	isController = 1;
+	label = OpenOtherPrefs;
+    };
+}
