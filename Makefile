@@ -2,6 +2,8 @@ TARGET = :clang
 ARCHS = armv7 arm64
 TWEAK_NAME = OpenOther
 OpenOther_FILES = Tweak.xm
+OpenOther_LIBRARIES = applist
+OpenOther_FRAMEWORKS = UIKit
 OpenOther_CFLAGS = -fobjc-arc
 
 include theos/makefiles/common.mk

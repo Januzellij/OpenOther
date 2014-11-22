@@ -2,9 +2,11 @@ TARGET = :clang
 ARCHS = armv7 arm64
 BUNDLE_NAME = OpenOtherPrefs
 OpenOtherPrefs_FILES = OpenOtherPrefs.mm
+OpenOtherPrefs_LIBRARIES = applist
 OpenOtherPrefs_INSTALL_PATH = /Library/PreferenceBundles
 OpenOtherPrefs_FRAMEWORKS = UIKit
 OpenOtherPrefs_PRIVATE_FRAMEWORKS = Preferences
+
 
 include theos/makefiles/common.mk
 include $(THEOS_MAKE_PATH)/bundle.mk

@@ -1,9 +1,9 @@
 Package: com.jakej.openother
 Name: OpenOther
-Depends: mobilesubstrate
-Version: 0.0.1
+Depends: mobilesubstrate, applist
+Version: 1.1
 Architecture: iphoneos-arm
-Description: An awesome MobileSubstrate tweak!
+Description: Redirect app icons to launch different apps.
 Maintainer: Jake Januzelli
 Author: Jake Januzelli
 Section: Tweaks

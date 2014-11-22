@@ -2,68 +2,83 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-        <key>entry</key>
-        <dict>
-                <key>cell</key>
-                <string>PSLinkCell</string>
-                <key>icon</key>
-                <string>openother_icon.png</string>
-                <key>label</key>
-                <string>OpenOther</string>
-        </dict>
-        <key>items</key>
-        <array>
-                <dict>
-                        <key>cell</key>
-                        <string>PSGroupCell</string>
-                        <key>isStaticText</key>
-                        <true/>
-                        <key>label</key>
-                        <string>OpenOther Settings:</string>
-                </dict>
-                <dict>
-                        <key>cell</key>
-                        <string>PSSwitchCell</string>
-                        <key>defaults</key>
-                        <string>com.jakej.openotherprefs</string>
-                        <key>key</key>
-                        <string>enabled</string>
-                        <key>label</key>
-                        <string>Enable: </string>
-                </dict>
-                        <dict>
-                        <key>cell</key>
-                        <string>PSEditTextCell</string>
-                        <key>defaults</key>
-                        <string>com.jakej.openotherprefs</string>
-                        <key>key</key>
-                        <string>appToRedirect</string>
-                        <key>label</key>
-                        <string>App to redirect:</string>
-                        
-                        </dict>
-                        
-                        <dict>
-                        <key>cell</key>
-                        <string>PSEditTextCell</string>
-                        <key>defaults</key>
-                        <string>com.jakej.openotherprefs</string>
-                        <key>key</key>
-                        <string>appToOpen</string>
-                        <key>label</key>
-                        <string>Redirect:</string>
-
-                        </dict>
-                        
-                <dict>
-                        <key>cell</key>
-                        <string>PSGroupCell</string>
-                        <key>footerText</key>
-                        <string>This is a reworked version of the OpenOther tweak by Tyler Nettleton. You can contact me on twitter at http://twitter.com/januzellij</string>
-                </dict>
-                
-        </array>
-        <key>title</key>
-        <string>OpenOther</string>
+	<key>entry</key>
+	<dict>
+		<key>cell</key>
+		<string>PSLinkCell</string>
+		<key>icon</key>
+		<string>openother_icon@2x.png</string>
+		<key>label</key>
+		<string>OpenOther</string>
+	</dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>isStaticText</key>
+			<true/>
+			<key>label</key>
+			<string>OpenOther Settings:</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>defaults</key>
+			<string>com.jakej.openotherprefs</string>
+			<key>key</key>
+			<string>enabled</string>
+			<key>label</key>
+			<string>Enable: </string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkCell</string>
+			<key>bundle</key>
+			<string>AppList</string>
+			<key>isController</key>
+			<string>1</string>
+			<key>label</key>
+			<string>App to redirect</string>
+			<key>key</key>
+			<string>ATR</string>
+			<key>ALSettingsKey</key>
+			<string>ATR</string>
+			<key>ALAllowsSelection</key>
+			<string>1</string>
+			<key>ALSettingsPath</key>
+			<string>/var/mobile/Library/Preferences/com.jakej.openotherprefs.plist</string>
+			<key>ALSingleEnabledMode</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkCell</string>
+			<key>bundle</key>
+			<string>AppList</string>
+			<key>isController</key>
+			<string>1</string>
+			<key>label</key>
+			<string>Redirect</string>
+			<key>key</key>
+			<string>RED</string>
+			<key>ALSettingsKey</key>
+			<string>RED</string>
+			<key>ALAllowsSelection</key>
+			<string>1</string>
+			<key>ALSettingsPath</key>
+			<string>/var/mobile/Library/Preferences/com.jakej.openotherprefs.plist</string>
+			<key>ALSingleEnabledMode</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>This is an updated version of the original openother tweak by Tyler Nettleton.</string>
+		</dict>
+	</array>
+	<key>title</key>
+	<string>OpenOther</string>
 </dict>
 </plist>
