@@ -1,10 +1,11 @@
 Package: com.jakej.openother
 Name: OpenOther
+Pre-Depends: firmware (>= 8.0)
 Depends: mobilesubstrate, applist
 Architecture: iphoneos-arm
 Description: Redirect app icons to launch different apps.
 Maintainer: Jake Januzelli
 Author: Jake Januzelli
 Section: Tweaks
-Version: 1.1-3
-Installed-Size: 172
+Version: 1.2
+Installed-Size: 176
