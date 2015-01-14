@@ -1,5 +1,6 @@
 TARGET = :clang
 ARCHS = armv7 arm64
+PACKAGE_VERSION = $(THEOS_PACKAGE_BASE_VERSION)
 TWEAK_NAME = OpenOther
 OpenOther_FILES = Tweak.xm
 OpenOther_LIBRARIES = applist

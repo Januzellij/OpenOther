@@ -18,12 +18,13 @@
 	BOOL enabled = [[prefs objectForKey:@"enabled"] boolValue];
 	if (enabled) {
 		NSString *appToOpen = nil;
+		NSString *bundleID = [arg1 bundleIdentifier];
 
-		if ([[prefs objectForKey:@"ATR1"] isEqualToString:[arg1 bundleIdentifier]]) {
+		if ([[prefs objectForKey:@"ATR1"] isEqualToString:bundleID]) {
 			appToOpen = [prefs objectForKey:@"RED1"];
-		} else if ([[prefs objectForKey:@"ATR2"] isEqualToString:[arg1 bundleIdentifier]]) {
+		} else if ([[prefs objectForKey:@"ATR2"] isEqualToString:bundleID]) {
 			appToOpen = [prefs objectForKey:@"RED2"];
-		} else if ([[prefs objectForKey:@"ATR3"] isEqualToString:[arg1 bundleIdentifier]]) {
+		} else if ([[prefs objectForKey:@"ATR3"] isEqualToString:bundleID]) {
 			appToOpen = [prefs objectForKey:@"RED3"];
 		}
 
